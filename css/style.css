@@ -83,6 +83,7 @@ button {
   transition: color opacity 250ms var(--timing-function);
 }
 .nav-list-item:hover::after {
+  background: #2196f3;
   opacity: 1;
 }
 .logo span {
@@ -180,7 +181,7 @@ button {
 .hero-button:focus,
 .hero-button:active {
   color: var(--color-white);
-  background: var(--color-blue);
+  background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
@@ -526,12 +527,10 @@ span.logo-white {
 }
 .modal {
   position: absolute;
-  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 528px;
-  height: 581px;
   background: var(--color-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -547,6 +546,82 @@ span.logo-white {
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   border-radius: 50px;
+}
+.form {
+  width: 528px;
+  background: var(--color-white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 40px;
+}
+.form-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  margin-bottom: 12px;
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.form-field label {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--text-color);
+  margin-bottom: 4px;
+  outline: none;
+}
+.form-field input {
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+}
+.form-field textarea {
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 20px;
+  outline: none;
+  padding-top: 12px;
+}
+.form-field-checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.form-field-checkbox input {
+  margin-right: 7px;
+}
+.form-field label:focus-visible,
+.form-field input:focus-visible,
+.form-field textarea:focus-visible {
+  border-color: var(--color-blue);
+}
+.form-btn {
+  width: 200px;
+  height: 50px;
+  color: var(--color-white);
+  background: var(--color-blue);
+  border-radius: 4px;
+  transition: color 250ms var(--timing-function);
+}
+.form-btn:hover {
+  color: var(--color-white);
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 /* MODAL WINDOW */
