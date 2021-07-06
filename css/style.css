@@ -101,7 +101,7 @@ button {
   padding: 0px;
   color: var(--text-color);
 }
-.nav-list-item {
+.nav-list-item a {
   position: relative;
 }
 .nav-list-item:hover,
@@ -119,6 +119,9 @@ button {
 }
 
 .mail-icon {
+  position: absolute;
+  bottom: 7px;
+  left: -20px;
   display: inline-block;
   width: 16px;
   height: 12px;
