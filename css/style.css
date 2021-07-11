@@ -103,7 +103,8 @@ button {
   margin-bottom: -8px;
   transition: 250ms var(--timing-function);
 }
-.nav-list-item:hover::after {
+.nav-list-item:hover::after,
+.nav-list-item:active::after {
   opacity: 1;
 }
 .nav-list-item:hover,
@@ -706,6 +707,7 @@ span.logo-white {
   border-color: var(--color-blue);
 }
 .form-textarea {
+  position: absolute;
   width: 448px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -715,9 +717,7 @@ span.logo-white {
   outline: none;
   resize: none;
 }
-.form-field-checkbox {
-  position: relative;
-}
+
 .form-input-checkbox {
   position: absolute;
   white-space: nowrap;
@@ -728,10 +728,9 @@ span.logo-white {
   padding: 0;
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
-  margin: -1px;
-  left: -19px;
+  left: -25px;
   top: 50%;
-  transform: translateY(-8px);
+  transform: translateY(-6px);
 }
 .form-input-checkbox:checked + .icon-chek {
   background-image: url(/images/icons/icon-check.svg);
@@ -740,15 +739,18 @@ span.logo-white {
 }
 .icon-chek {
   position: absolute;
-  left: -21px;
-  top: 3px;
+  left: -25px;
+  bottom: -1%;
+  transform: translateY(-50%);
   width: 16px;
   height: 15px;
   border: var(--text-color) solid 2px;
 }
 .form-field-checkbox {
   position: absolute;
-  left: 60px;
+  bottom: 21%;
+  transform: translateY(0%);
+  left: 67px;
   height: 24px;
   font-family: Roboto;
   font-style: normal;
